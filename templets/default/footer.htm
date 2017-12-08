@@ -1,0 +1,39 @@
+<div class="footer">
+  <div class="footer_cell">
+    <div class="foot_extend cf">
+      <div class="foot_img"><!--下面img标签里填写底部图片地址--> 
+        <img src='/skin/images/dd.jpg'/> </div>
+      
+      <!--修改下方每个条目href的#可跳转链接地址   如果只有3列，修改for4为for3-->
+      <div class="foot_box for4"> {dede:type typeid='3'}
+        <p>[field:typename/]</p>
+        {/dede:type} 
+        {dede:channel typeid='3' row='3'} <a href="[field:typelink/]">[field:typename/]</a> {/dede:channel} </div>
+      <div class="foot_box for4"> {dede:type typeid='2'}
+        <p>[field:typename/]</p>
+        {/dede:type} 
+        {dede:arclist  typeid='2'   row='3'} <a href="[field:arcurl/]">[field:title/]</a> {/dede:arclist} </div>
+      <div class="foot_box for4"> {dede:type typeid='1'}
+        <p>[field:typename/]</p>
+        {/dede:type} 
+        {dede:arclist  typeid='1'   row='3'} <a href="[field:arcurl/]">[field:title/]</a> {/dede:arclist} </div>
+      <div class="foot_box for4"> {dede:type typeid='11'}
+        <p>[field:typename/]</p>
+        {/dede:type} 
+        {dede:channel typeid='11' row='3'} <a href="[field:typelink/]">[field:typename/]</a> {/dede:channel} </div>
+    </div>
+    <div class="follow"> <a href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_kefu/}&site=qq&menu=yes" target="_blank"><span class="s-qq" title="与我QQ在线聊天"></span></a> <a href="http://www.taobao.com/" target="_blank"><span class="s-taobao" title="访问我的淘宝店铺"></span></a><a href="http://t.qq.com/" target="_blank"><span class="s-tt" title="访问我的腾讯微博"></span></a> <a href="http://weibo.com/" target="_blank"><span class="s-weibo" title="访问我的新浪微博"></span></a> </div>
+    <p class="copy">
+    <p>{dede:global.cfg_powerby/} 备案号：{dede:global.cfg_beian/}</p>
+    </p>
+    <p class="" style="font-size: 11px;"> 友情链接：{dede:flink titlelen='30' row='3' type='text'}  [field:link /]  {/dede:flink} </p>
+  </div>
+</div>
+<script type='text/javascript' src='/skin/js/smoothscroll.js'></script> 
+
+<!--客服-->
+<ul class="list-unstyled kefu">
+  <li class="visible-md-block visible-lg-block"><a class="kf-qq" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_kefu/}&site=qq&menu=yes" target="_blank" data-toggle="tooltip" data-placement="left" title="QQ在线咨询" rel="nofollow">QQ在线咨询</a></li>
+  <li><a class="kf-ly" href="tel:{dede:global.cfg_tel/}" data-toggle="tooltip" data-placement="left" title="致电我们">致电我们</a></li>
+  <li><a class="kf-top" href="#top" data-toggle="tooltip" data-placement="left" title="到顶部" rel="nofollow">到顶部</a></li>
+</ul>

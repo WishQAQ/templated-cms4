@@ -1,0 +1,1 @@
+<div class="item" style="background-image: url([field:picname/])"><a target="_blank" href="[field:arcurl/]"></a></div>

@@ -1,0 +1,1 @@
+<div class="gallery_box"> <img src="[field:picname/]"> <span>[field:typename/]</span> <a href="[field:arcurl/]"></a> </div>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<meta charset="utf-8">
+<meta content="telephone=no" name="format-detection" />
+<meta content="email=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}">
+<meta name="keywords" content="{dede:global.cfg_keywords/}">
+<link rel="stylesheet" href="/skin/css/style.css">
+<link rel="stylesheet" href="/skin/css/slick.css">
+<style type="text/css">
+a, .section_title_1 .setting span, a.more, .side_box .section_title_1>p, .form .section_title_1>p, .catg_hide p, .list_text a:hover p, .catg_name a:hover, .foot_extend a:hover, .gallery_box:hover span {
+	color: #48b4c2;
+}
+.section_title_1 .setting span:after, .btn_1 a:hover, .catg_hide, a.btn_contact:hover, .form input:focus, .form textarea:focus {
+	border-color: #48b4c2;
+}
+.home .section_title_3>p:after, .home .section_title_1>p:after, .slick-dots li.slick-active button, .alpha_bg, .btn_1 a:after, .gallery_box:hover:before, .btn_2 a, .catg_name a.on, a.btn_2:before, .page_on a, a.btn_contact:hover, .formBtn button:hover, .service_box_text p a:hover {
+	background-color: #48b4c2;
+}
+.header {
+	background-color: #222;
+	display:block !important;
+}
+.nav li a, .header_info p, .header_info p a {
+	color: #f0f0f0;
+}
+.on a {
+	border-color: #f0f0f0;
+}
+</style>
+<script src="/skin/js/jquery1.9.js"></script><script src="/skin/js/slick.min.js"></script><script src="/skin/js/scrollReveal.js"></script>
+<script src="/skin/js/main.js"></script>
+<!--[if IE 8]>
+	<script src="/skin/js/background-size.js"></script>	<script src="/skin/js/selectivizr.js"></script>	<![endif]-->
+
+</head>
+
+<body>
+<div class="slider"> {dede:arclist  typeid='7'}
+  <div class="item" style="background-image: url([field:picname/])"><a target="_blank" href="[field:arcurl/]"></a></div>
+  {/dede:arclist} </div>
+<!-- 幻灯片结束 -->
+
+<div class="header">
+{dede:include filename="head.htm"/}
+<div class="content">
+  <div class="section home">
+    <div class="section_title_1" data-scroll-reveal> {dede:type typeid="8"}
+      <p>[field:typename/]</p>
+      {/dede:type}
+      <div class="setting">EVERYTHING HERE BEGIN</div>
+    </div>
+    {dede:arclist  typeid='8'    row='3'}
+    <div class="service_box" data-scroll-reveal> <img src="[field:picname/]">
+      <div class="service_box_text">
+        <h4>[field:title/]</h4>
+        <p>[field:description function='cn_substr(Html2text("@me")."...",260)'/] <a href="[field:arcurl/]">了解更多</a></p>
+      </div>
+    </div>
+    {/dede:arclist} </div>
+  <!-- section结束 --> 
+  
+  <!-- 关于 -->
+  <div class="section_2 home home_about">
+    <div class="bg_blur" style="background-image:url(/skin/images/about.jpg)" data-parallax-background-inertia="0.3"></div>
+    <div class="section_2_cell">
+      <div class="section_2_left">
+        <div class="section_title_2" data-scroll-reveal>{dede:type typeid="3"}
+          <p>[field:typename/]</p>
+          {/dede:type}
+          <div class="setting">ABOUT US</div>
+        </div>
+        <div class="section_2_brief" data-scroll-reveal>
+          <p>{dede:sql sql='Select content from dede_arctype where id=3'}[field:content function="htmlspecialchars(cn_substr(Html2text(@me),1100))"/]...
+            {/dede:sql} </p>
+        </div>
+        <div class="btn_1"> {dede:type typeid="3"}<a href="[field:typelink/]">了解详细</a>{/dede:type}</div>
+      </div>
+    </div>
+  </div>
+  <!-- section2结束 --> 
+  
+  <!-- 产品 -->
+  
+  <div class="section home">
+    <div class="section_title_1" data-scroll-reveal="" data-scroll-reveal-id="7" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true"> {dede:type typeid="2"}
+      <p>[field:typename/]</p>
+      {/dede:type}
+      <div class="setting">FASHION SHOW</div>
+    </div>
+    <div class="gallery_list" data-scroll-reveal="" data-scroll-reveal-id="8" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true"> {dede:arclist  typeid='2'    row='6'}
+      <div class="gallery_box"> <img src="[field:picname/]"> <span>[field:typename/]</span> <a href="[field:arcurl/]"></a> </div>
+      {/dede:arclist} </div>
+    <div class="btn_2">{dede:type typeid="2"}<a href="[field:typelink/]">查看更多</a>{/dede:type}</div>
+  </div>
+  <!-- 新闻 -->
+  
+  <div class="section_2 bg_light home">
+    <div class="alpha_bg" style="background-image:url(/skin/images/1.jpg)" data-parallax-background-inertia="0.2"></div>
+    <div class="section_2_cell">
+      <div class="section_title_3" data-scroll-reveal> {dede:type typeid="1"}
+        <p>[field:typename/]</p>
+        {/dede:type}
+        <div class="setting">NEWS INFORMATION</div>
+      </div>
+      <div id="news_slider" class="owl-carousel" data-scroll-reveal> {dede:arclist   typeid='1'}
+        <div class="list_item">
+          <div class="list_text">
+            <p class="time_1">[field:pubdate function="MyDate('Y-m-d',@me)"/]</p>
+            <a href="[field:arcurl/]">
+            <p class="list_title">[field:title/]</p>
+            </a>
+            <div class="list_brief">
+              <p>[field:description function='cn_substr(Html2text("@me")."...",260)'/] 
+            </div>
+            <div class="more_2"><a href="[field:arcurl/]">了解详细</a></div>
+          </div>
+          <div class="list_img"><a href="[field:arcurl/]"><img src="[field:picname/]"></a></div>
+        </div>
+        <!-- item-end --> 
+        
+        {/dede:arclist} </div>
+      <div class="btn_2">{dede:type typeid="1"}<a href="[field:typelink/]">查看更多</a>{/dede:type}</div>
+    </div>
+    <!-- section2结束 --> 
+  </div>
+</div>
+
+<!-- END --> 
+{dede:include filename="footer.htm"/}
+</body>
+</html>

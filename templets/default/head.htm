@@ -1,0 +1,18 @@
+<div class="nav">
+  <div class="logo"><a href="/"><img src="/skin/images/logo.png"></a></div>
+  <div class="nav_icon"></div>
+  <div class="side_close"></div>
+  <ul>
+    <li  {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='on'":@me="";{/dede:field} ><a href="/" target="_self">网站首页</a></li>
+    {dede:channel type ='top' currentstyle="
+    <li class='on'><a href='~typelink~'>~typename~</a> </li>
+    "}
+    <li [field:rel/]><a href="[field:typelink/]" target="_self">[field:typename/]</a></li>
+    {/dede:channel}
+  </ul>
+  <div class="header_info">
+    <p><img  src='/skin/images/code.jpg'/></p>
+  </div>
+</div>
+</div>
+<div class="h_100"></div>

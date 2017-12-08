@@ -1,0 +1,41 @@
+<?php
+$z[0]=Array("field","",379,398);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",399,425);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",469,521);
+$z[2][4]['name']="description";
+$z[2][4]['function']="html2text(@me)";
+$z[3]=Array("field","",556,578);
+$z[3][4]['name']="keywords";
+$z[4]=Array("include","",1957,1992);
+$z[4][4]['filename']="head.htm";
+$z[5]=Array("type","\r\n          <p>[field:typename/]</p>\r\n          ",2140,2222);
+$z[5][4]['typeid']="2";
+$z[6]=Array("arclist","\r\n        <div class=\"gallery_box\"> <img src=\"[field:picname/]\"> <span>[field:title/]</span> <a href=\"[field:arcurl/]\"></a> </div>\r\n        ",2239,2444);
+$z[6][4]['typeid']="2";
+$z[6][4]['row']="4";
+$z[6][4]['orderby']="rand";
+$z[7]=Array("type"," <a href=\"[field:typelink/]\" class=\"btn_contact\">查看更多</a>",2454,2553);
+$z[7][4]['typeid']="2";
+$z[8]=Array("include","",2568,2615);
+$z[8][4]['filename']="left_nav_contact.htm";
+$z[9]=Array("field","",2681,2733);
+$z[9][4]['name']="pubdate";
+$z[9][4]['function']="MyDate('Y-m-d',@me)";
+$z[10]=Array("field","",2768,2787);
+$z[10][4]['name']="title";
+$z[11]=Array("field","",2827,2845);
+$z[11][4]['name']="body";
+$z[12]=Array("type","[field:typelink/]",2912,2958);
+$z[12][4]['row']="1";
+$z[13]=Array("prenext","   \r\npreg_match_all('/<a.*?(?: |\\\\t|\\\\r|\\\\n)?href=[\\'\"]?(.+?)[\\'\"]?(?:(?: |\\\\t|\\\\r|\\\\n)+.*?)?>(.+?)<\\/a.*?>/sim', @me, \$strResult, PREG_PATTERN_ORDER);   \r\n        @me=\$strResult[1][0];   \r\n        ",2998,3249);
+$z[13][4]['get']="next";
+$z[13][4]['runphp']="yes";
+$z[14]=Array("prenext","   \r\npreg_match_all('/<a.*?(?: |\\\\t|\\\\r|\\\\n)?href=[\\'\"]?(.+?)[\\'\"]?(?:(?: |\\\\t|\\\\r|\\\\n)+.*?)?>(.+?)<\\/a.*?>/sim', @me, \$strResult, PREG_PATTERN_ORDER);   \r\n        @me=\$strResult[1][0];   \r\n        ",3289,3539);
+$z[14][4]['get']="pro";
+$z[14][4]['runphp']="yes";
+$z[15]=Array("include","",3682,3719);
+$z[15][4]['filename']="footer.htm";
+
+?>
